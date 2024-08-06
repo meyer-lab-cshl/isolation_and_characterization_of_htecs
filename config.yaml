@@ -31,9 +31,9 @@ trimming:
 # reference files for alignment with STAR
 ref:
   # the STAR index
-  index: "/grid/meyer/home/common/public/annotations/genome/mouse/GRCm38/STARINDEX"
+  index: "/grid/meyer/home/common/public/annotations/genome/human/GRCh38/star-2.7.8/STARINDEX"
   # gtf file with transcripts
-  annotation: "/grid/meyer/home/common/public/annotations/genome/mouse/GRCm38/mouse.GRCm38.gtf"
+  annotation: "/grid/meyer/home/common/public/annotations/genome/human/GRCh38/human.GRCh38.gtf"
 
 
 # Settings for PCA on rlog-normalised count data; all values indicate column
@@ -49,43 +49,28 @@ pca:
   # columns of sample sheet to use for PCA
   fill: "condition"
   color: ""
-  labels: "individual"
+  labels: "unit"
 
 diffexp:
   # overall design for deseq2
-  design: " ~ individual + condition"
+  design: " ~ condition"
   # organism name for annotation hub
-  organism: "mouse"
+  organism: "human"
   collapse: false
   # contrasts for the deseq2 results method
   contrasts:
-    aa-vs-control:
-      - aa
-      - control
-    pge2-vs-control:
-      - pge2
-      - control
-    pge2-vs-aa:
-      - pge2
-      - aa
+    ctec-vs-mtec:
+      - ctec
+      - mtec
 
-fgsea:
-  #do the gene set files have descriptions?
-  descriptions: "yes"
-  #msigdb categories
-  msigdb_categories:
-    - "C1"
-    - "C4"
-  #gene_set files
-  gene_sets: ""
 
 params:
   star: ""
   cutadapt-se: ""
   cutadapt-pe: ""
   #gene set enrichment (bool)
-  enrichment: true
+  enrichment: false
   # batch_adjust: column  from samples.txt to use for batch adjusting
   # (e.g. batch, individual effect) of rlog-normalised counts (prior to PCA and
   # heatmap)
-  batch_adjust: "individual"
+  batch_adjust: ""
