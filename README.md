@@ -1,3 +1,15 @@
+
+# Experiment: exp18_49f-hi_tec_deconvolution_analysis
+Objective: align and generate read counts from published TEC bulk-RNAseq data and compare to our TEC scRNAseq data to determine what TEC subtypes make up CD49f(hi)CD200-
+Public data source: https://www.ebi.ac.uk/ena/browser/view/PRJEB39649
+Date downloaded: 7/18/2024
+Paper origin: Novel Combination of Surface Markers for the Reliable and Comprehensive Identification of Human Thymic Epithelial Cells by Flow Cytometry: Quantitation and Transcriptional Characterization of Thymic Stroma in a Pediatric Cohort
+
+
+
+
+
+
 # RNAseq Snakemake workflow
 
 This workflow performs a differential expression analysis using [STAR](https://github.com/alexdobin/STAR) and [DESeq2](http://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html). It performs a wide range of quality control steps and
