@@ -1,7 +1,7 @@
 sample	unit	fq1	condition	strandedness
-ctec1	rep1	reads/20190816.A-18-12-11_cTECs_R1.fastq.gz	ctec	yes
-ctec2	rep2	reads/20190816.A-19-5-31_cTECs_R1.fastq.gz	ctec	yes
-ctec3	rep3	reads/20190816.A-19-6-3_cTECs_R1.fastq.gz	ctec	yes
-mtec1	rep1	reads/20190816.A-18-12-11_mTECs_R1.fastq.gz	mtec	yes
-mtec2	rep2	reads/20190816.A-19-4-18_mTECs_R1.fastq.gz	mtec	yes
-mtec3	rep3	reads/20190816.A-19-6-3_mTECs_R1.fastq.gz	mtec	yes
+ctec1	rep1	reads/20190816.A-18-12-11_cTECs_R1.fastq.gz	ctec	reverse
+ctec2	rep2	reads/20190816.A-19-5-31_cTECs_R1.fastq.gz	ctec	reverse
+ctec3	rep3	reads/20190816.A-19-6-3_cTECs_R1.fastq.gz	ctec	reverse
+mtec1	rep1	reads/20190816.A-18-12-11_mTECs_R1.fastq.gz	mtec	reverse
+mtec2	rep2	reads/20190816.A-19-4-18_mTECs_R1.fastq.gz	mtec	reverse
+mtec3	rep3	reads/20190816.A-19-6-3_mTECs_R1.fastq.gz	mtec	reverse
