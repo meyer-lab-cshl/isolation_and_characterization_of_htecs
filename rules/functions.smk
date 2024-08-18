@@ -1,14 +1,19 @@
 def get_fastq(wildcards):
     return samples.loc[(wildcards.sample, wildcards.unit), ["fq1", "fq2"]].dropna()
 
-def is_single_end(sample, unit):
+def is_single_end_old(sample, unit):
     return pd.isnull(samples.loc[(sample, unit), "fq2"])
+
+def is_single_end(sample, unit):
+    return not "fq2" in samples.columns
 
 def get_fq(wildcards):
     if config["trimming"]["skip"]:
-        # no trimming, use raw reads
-        return {"fq1":samples.loc[(wildcards.sample, wildcards.unit), ["fq1"]].dropna(),
-                "fq2":samples.loc[(wildcards.sample, wildcards.unit), ["fq2"]].dropna()}
+        if not is_single_end(**wildcards):
+            # no trimming, use raw reads
+            return {"fq1":samples.loc[(wildcards.sample, wildcards.unit), ["fq1"]].dropna(),
+                    "fq2":samples.loc[(wildcards.sample, wildcards.unit), ["fq2"]].dropna()}
+        return {"fq1":samples.loc[(wildcards.sample, wildcards.unit), ["fq1"]].dropna()}
     else:
         # yes trimming, use trimmed data
         if not is_single_end(**wildcards):

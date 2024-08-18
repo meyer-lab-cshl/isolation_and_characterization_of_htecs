@@ -25,7 +25,7 @@ rule align:
             --runThreadN {threads} \
             --runMode alignReads \
             --genomeDir {params.index} \
-            --readFilesIn {input.fq1} {input.fq2} {params.readcmd} \
+            --readFilesIn {input.fq1} {params.readcmd} \
             --outReadsUnmapped Fastq \
             --outSAMtype BAM Unsorted \
             --outFileNamePrefix star/{wildcards.sample}-{wildcards.unit}/

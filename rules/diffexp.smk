@@ -65,6 +65,8 @@ rule deseq2:
     params:
         contrast=get_contrast,
         annotationhub=config["diffexp"]["organism"]
+    resources:
+        mem_mb = 12000
     conda:
         "../envs/deseq2.yaml"
     log:
@@ -89,6 +91,8 @@ rule heatmap:
         species = config["diffexp"]["organism"],
         batch=config["params"]["batch_adjust"]
     threads: 1
+    resources:
+        mem_mb = 5000
     conda:
         "../envs/deseq2.yaml"
     log:

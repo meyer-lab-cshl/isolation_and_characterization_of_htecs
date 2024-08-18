@@ -186,7 +186,7 @@ rule multiqc:
         expand("qc/rseqc/{unit.sample}-{unit.unit}.readgc.GC_plot.pdf",
             unit=samples.itertuples()),
         expand("logs/rseqc/rseqc_junction_annotation/{unit.sample}-{unit.unit}.log",
-            unit=samples.itertuples()),
+           unit=samples.itertuples()),
     output:
         "qc/multiqc_report.html"
     log:
