@@ -1,3 +1,6 @@
+# Isolation and Characterization of Human Thymic Epithelial Cells
+Object: 
+
 
 # Experiment: exp18_49f-hi_tec_deconvolution_analysis
 Objective: align and generate read counts from published TEC bulk-RNAseq data and compare to our TEC scRNAseq data to determine what TEC subtypes make up CD49f(hi)CD200-
