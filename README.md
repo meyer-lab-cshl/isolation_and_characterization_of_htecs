@@ -1,5 +1,5 @@
 # Isolation and Characterization of Human Thymic Epithelial Cells
-Objective: 
+Objective: verify CD205 as a valid surface marker for identifying human thymus epithelials
 
 
 
