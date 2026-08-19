@@ -1,8 +1,10 @@
 # Isolation and Characterization of Human Thymic Epithelial Cells
-Object: 
+Objective: 
 
 
-# Experiment: exp18_49f-hi_tec_deconvolution_analysis
+
+
+## Experiment: exp18_49f-hi_tec_deconvolution_analysis
 Objective: align and generate read counts from published TEC bulk-RNAseq data and compare to our TEC scRNAseq data to determine what TEC subtypes make up CD49f(hi)CD200-
 Public data source: https://www.ebi.ac.uk/ena/browser/view/PRJEB39649
 Date downloaded: 7/18/2024
@@ -13,7 +15,7 @@ Paper origin: Novel Combination of Surface Markers for the Reliable and Comprehe
 
 
 
-# RNAseq Snakemake workflow
+## RNAseq Snakemake workflow
 
 This workflow performs a differential expression analysis using [STAR](https://github.com/alexdobin/STAR) and [DESeq2](http://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html). It performs a wide range of quality control steps and
 bundles there results in a qc report via [MultiQC](https://multiqc.info/). Reported results include:
@@ -23,9 +25,9 @@ bundles there results in a qc report via [MultiQC](https://multiqc.info/). Repor
 * heatmap of counts and log2 Fold Changes
 * lollipop plot of enriched gene sets
 
-## Usage
+### Usage
 
-#### Step 1: Configure workflow
+##### Step 1: Configure workflow
 
 You will likely run these analyses on the HPCC (currently Elzar), but you will want access to the results locally.
 Our strategy is to have the analysis repository on the local machine and on the HPCC, in the same file path location
@@ -55,7 +57,7 @@ To run the analysis, activate your conda snakemake environment:
     conda activate snakemake
 ```
 
-#### Step 2: Execute workflow
+##### Step 2: Execute workflow
 
 Test your configuration by performing a dry-run via
 
@@ -69,7 +71,7 @@ using `$N` cores or run it on the [UGE cluster environment](https://github.com/m
 
     snakemake --use-conda --profile uge
 
-#### Step 3: Investigate results
+##### Step 3: Investigate results
 
 After successful execution, you can create a self-contained interactive HTML report via:
 
