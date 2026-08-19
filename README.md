@@ -1,10 +1,11 @@
 # Isolation and Characterization of Human Thymic Epithelial Cells
-Objective: verify CD205 as a valid surface marker for identifying human thymus epithelials
+1. verify CD205 as a valid surface marker for identifying human thymus epithelials.
+2. characterize previously described CD49f(hi)CD200- "cTECs" by MuSiC deconvolution analysis using our scRNAseq data as reference.
+3. assess correspondence of scRNAseq cell types with previously published human thymic stromal cell atlases.
+4. characterize putative thymic nurse cell subsets
 
 
-
-
-## Experiment: exp18_49f-hi_tec_deconvolution_analysis
+## CD49f(hi)CD200- MuSiC deconvolution analysis
 Objective: align and generate read counts from published TEC bulk-RNAseq data and compare to our TEC scRNAseq data to determine what TEC subtypes make up CD49f(hi)CD200-
 Public data source: https://www.ebi.ac.uk/ena/browser/view/PRJEB39649
 Date downloaded: 7/18/2024
