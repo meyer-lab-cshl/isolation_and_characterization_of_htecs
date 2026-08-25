@@ -8,7 +8,7 @@ Content:
 4. characterize putative thymic nurse cell subsets
 
 
-## CD49f(hi)CD200- MuSiC deconvolution analysis
+### CD49f(hi)CD200- MuSiC deconvolution analysis
 Objective: align and generate read counts from published TEC bulk-RNAseq data and compare to our TEC scRNAseq data to determine what TEC subtypes make up CD49f(hi)CD200-
 Public data source: https://www.ebi.ac.uk/ena/browser/view/PRJEB39649
 Date downloaded: 7/18/2024
