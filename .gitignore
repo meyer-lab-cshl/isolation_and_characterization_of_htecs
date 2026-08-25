@@ -24,5 +24,6 @@ scripts/.snakemake*
 !.gitattributes
 !.test
 !.test/data
+!jupyter_notebooks/
 !jupyter_notebooks/*
 .Rproj.user
